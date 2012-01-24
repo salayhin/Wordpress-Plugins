@@ -30,14 +30,14 @@ function linkedin_share($content)
 
         $protocol = $_SERVER['HTTPS'] == 'on' ? 'https' : 'http';
 
-        $sc_page_url = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+        $page_url = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
         $post_id = get_the_ID();
 
-        $sc_page_title = get_the_title($post_id);
+        $page_title = get_the_title($post_id);
 
         $content .= '<p><script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/Share" data-counter="right"></script></p>';
+                        <script type="IN/Share" data-counter="right"></script></p>';
 
     }
 
