@@ -5,7 +5,7 @@
         Description: Paypal Donate
         Author: sirajus salayhin
         Version: 0.0.1
-        Author URI: http://salayhin.info
+        Author URI: http://salayhin.com
         */
 add_action('widgets_init', 'payd_load_widgets');
 
